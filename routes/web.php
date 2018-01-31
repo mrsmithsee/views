@@ -27,3 +27,5 @@ Route::get('/', function() {
 
 Route::get('/cursos', 'CursosController@index');
 //@nome da funcao que vamos criar index no caso.
+
+Route::get('/cursos{index}', 'CursosController@show');
