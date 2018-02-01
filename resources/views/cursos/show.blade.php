@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -10,11 +10,19 @@
 
       <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h1>{{ $curso }}</h1>
+            <h1>{ { $curso }}</h1>
           </div>
       </div>
     </div>
 
     <script type="text/javascript" src="/js/app.js">
   </body>
-</html>
+</html> -->
+
+@extends('layouts.master')
+
+@section('titulo', $curso)
+
+@section('conteudo')
+    <h1>{{ $curso }}</h1>
+@endsection
